@@ -8,6 +8,16 @@
       height: 40px;
       display: inline-block;
       margin-right: 20px;
+      background-color: #4CAF50;
+      color: white;
+      font-size: 18px;
+      border: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .button-gap:hover {
+      background-color: #45a049;
     }
     
     .image-gap {
@@ -15,6 +25,8 @@
       height: 200px;
       display: inline-block;
       margin-right: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 
     .gap {
@@ -22,14 +34,37 @@
     }
 
     body {
-      font-family: system-ui;
-      background: #f06d06;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #1CB5E0 10%, #000851 100%);
       color: white;
       text-align: center;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 6vw;
+      margin-bottom: 30px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .warning {
+      font-size: 18px;
+      color: red;
+      margin-bottom: 10px;
+    }
+
+    .version {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      font-size: 12px;
+      color: white;
     }
   </style>
 </head>
 <body>
+  <div class="warning">Warning! This page is in beta.</div>
   <h1>Teknik.AB Games</h1>
   <button class="button-gap" onclick="myFunction()">Fruit Catcher</button>
   <button class="button-gap" onclick="myOtherFunction()">Tic Tac Toe</button>
@@ -43,7 +78,7 @@
   <img src="https://i.ibb.co/X3DJNGK/IMG-2758.jpg" alt="Description of the image" class="image-gap gap">
 
   <!-- Add an image -->
-  <img src="https://example.com/image3.jpg" alt="Description of the image" class="image-gap gap">
+  <img src="https://i.ibb.co/NTbBFh8/IMG-2789.jpg" alt="Description of the image" class="image-gap gap">
 
   <!-- Add an image -->
   <img src="https://example.com/image4.jpg" alt="Description of the image" class="image-gap gap">
@@ -60,6 +95,8 @@
   <img src="https://example.com/image7.jpg" alt="Description of the image" class="image-gap gap">
   <img src="https://example.com/image8.jpg" alt="Description of the image" class="image-gap gap">
 
+  <div class="version">Version 3.4</div>
+
   <script>
     function myFunction() {
       // Redirect to another page
@@ -72,7 +109,7 @@
     }
 
     function myThirdFunction() {
-      // Redirect to another page when the third button is clicked
+      // Redirect to another page when the second button is clicked
       window.location.href = "https://movieboxc17.github.io/Chat_bot/";
     }
 
@@ -100,9 +137,6 @@
       // Perform another action when the eighth button is clicked
       alert("error");
     }
-  </script>
-  <script>
-    document.getElementsByTagName("h1")[0].style.fontSize = "6vw";
   </script>
 </body>
 </html>
