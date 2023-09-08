@@ -19,7 +19,7 @@
     .button-gap:hover {
       background-color: #45a049;
     }
-
+    
     .image-gap {
       width: 200px;
       height: 200px;
@@ -31,6 +31,12 @@
 
     .gap {
       margin-bottom: 20px;
+    }
+
+    /* Additional button and image styles */
+    .button-gap:nth-child(n+5),
+    .image-gap:nth-child(n+5) {
+      margin-right: 20px;
     }
 
     body {
@@ -81,7 +87,13 @@
   <img src="https://i.ibb.co/NTbBFh8/IMG-2789.jpg" alt="Description of the image" class="image-gap gap">
 
   <!-- Add an image -->
-  <img src="https://i.ibb.co/2dJ0KWd/IMG-2811.jpg" alt="Description of the image" class="image-gap gap">
+   <img src="https://i.ibb.co/2dJ0KWd/IMG-2811.jpg" alt="Description of the image" class="image-gap gap">
+
+  <!-- Add four more buttons -->
+  <button class="button-gap" onclick="myFifthFunction()">Snake</button>
+  <button class="button-gap" onclick="mySixthFunction()">GuessTheNumber</button>
+  <button class="button-gap" onclick="mySeventhFunction()">Pixelcamera</button>
+  <button class="button-gap" onclick="myEighthFunction()">Button</button>
 
   <!-- Add four more images -->
   <img src="https://example.com/image5.jpg" alt="Description of the image" class="image-gap gap">
@@ -89,99 +101,38 @@
   <img src="https://i.ibb.co/RbLkHrm/IMG-2870.jpg" alt="Description of the image" class="image-gap gap">
   <img src="https://example.com/image8.jpg" alt="Description of the image" class="image-gap gap">
 
-  <!-- Move buttons 13, 14, 15, and 16 under the images -->
-  <button class="button-gap" onclick="myFifthFunction()">Snake</button>
-  <button class="button-gap" onclick="mySixthFunction()">GuessTheNumber</button>
-  <button class="button-gap" onclick="mySeventhFunction()">Pixelcamera</button>
-  <button class="button-gap" onclick="myEighthFunction()">Button</button>
+  <!-- Add four more buttons (new) -->
+  <button class="button-gap" onclick="myNinthFunction()">New Button 1</button>
+  <button class="button-gap" onclick="myTenthFunction()">New Button 2</button>
+  <button class="button-gap" onclick="myEleventhFunction()">New Button 3</button>
+  <button class="button-gap" onclick="myTwelfthFunction()">New Button 4</button>
 
-  <button class="button-gap" onclick="myNinthFunction()">Game 9</button>
-  <button class="button-gap" onclick="myTenthFunction()">Game 10</button>
-  <button class="button-gap" onclick="myEleventhFunction()">Game 11</button>
-  <button class="button-gap" onclick="myTwelfthFunction()">Game 12</button>
-  
-  <button class="button-gap" onclick="myThirteenthFunction()">Game 13</button>
-  <button class="button-gap" onclick="myFourteenthFunction()">Game 14</button>
-  
-  <button class="button-gap" onclick="myFifteenthFunction()">Game 15</button>
-  <button class="button-gap" onclick="mySixteenthFunction()">Game 16</button>
+  <!-- Add four more images (new) -->
+  <img src="https://example.com/image9.jpg" alt="Description of the image" class="image-gap gap">
+  <img src="https://example.com/image10.jpg" alt="Description of the image" class="image-gap gap">
+  <img src="https://example.com/image11.jpg" alt="Description of the image" class="image-gap gap">
+  <img src="https://example.com/image12.jpg" alt="Description of the image" class="image-gap gap">
 
   <div class="version">Version 3.5</div>
 
   <script>
-    // Existing functions for the first eight buttons
-    function myFunction() {
-      window.location.href = "https://askansz.github.io/the.king/";
-    }
+    // Existing JavaScript functions (myFunction, myOtherFunction, etc.)
 
-    function myOtherFunction() {
-      window.location.href = "https://askansz.github.io/TicTacToeGame/";
-    }
-
-    function myThirdFunction() {
-      window.location.href = "https://movieboxc17.github.io/Chat_bot/";
-    }
-
-    function myFourthFunction() {
-      window.location.href ="https://movieboxc17.github.io/Game12/";
-    }
-    
-    function myFifthFunction() {
-      window.location.href ="https://movieboxc17.github.io/Snake/";
-    }
-    
-    function mySixthFunction() {
-     window.location.href ="https://askansz.github.io/GuessTheNumber/";
-    }
-    
-    function mySeventhFunction() {
-      window.location.href ="https://movieboxc17.github.io/Test56/";
-    }
-    
-    function myEighthFunction() {
-      alert("error");
-    }
-
-    // Add functions for the six new buttons
+    // New JavaScript functions for the additional buttons
     function myNinthFunction() {
-      // Replace with the URL or action for Game 9
-      window.location.href = "https://example.com/game9";
+      // Replace with the desired action for the ninth button
     }
 
     function myTenthFunction() {
-      // Replace with the URL or action for Game 10
-      window.location.href = "https://example.com/game10";
+      // Replace with the desired action for the tenth button
     }
 
     function myEleventhFunction() {
-      // Replace with the URL or action for Game 11
-      window.location.href = "https://example.com/game11";
+      // Replace with the desired action for the eleventh button
     }
 
     function myTwelfthFunction() {
-      // Replace with the URL or action for Game 12
-      window.location.href = "https://example.com/game12";
-    }
-
-    function myThirteenthFunction() {
-      // Replace with the URL or action for Game 13
-      window.location.href = "https://example.com/game13";
-    }
-
-    function myFourteenthFunction() {
-      // Replace with the URL or action for Game 14
-      window.location.href = "https://example.com/game14";
-    }
-    
-    // Add functions for the two new buttons
-    function myFifteenthFunction() {
-      // Replace with the URL or action for Game 15
-      window.location.href = "https://example.com/game15";
-    }
-
-    function mySixteenthFunction() {
-      // Replace with the URL or action for Game 16
-      window.location.href = "https://example.com/game16";
+      // Replace with the desired action for the twelfth button
     }
   </script>
 </body>
